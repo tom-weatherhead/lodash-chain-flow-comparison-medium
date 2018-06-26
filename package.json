@@ -1,0 +1,18 @@
+{
+  "name": "medium-example",
+  "version": "0.1.0",
+  "scripts": {
+    "build:flow": "webpack -p --config ./webpack-flow.js",
+    "build:chain": "webpack -p --config ./webpack-chain.js",
+    "build": "npm run build:flow && npm run build:chain"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-metalab": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
